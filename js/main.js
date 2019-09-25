@@ -48,7 +48,11 @@ const playOne = () => {
   theplayer.play()
 }
 
+theplayer.onended = playOne
+
 getTracks(urls)
+
+setTimeout(playOne, 3500)
 
 /* says hi */
 console.log('hi @', new Date())
